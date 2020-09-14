@@ -1,0 +1,233 @@
+@-webkit-keyframes loop {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -273px 287px;
+  }
+}
+@keyframes loop {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -273px 287px;
+  }
+}
+@-webkit-keyframes loop2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 200%;
+  }
+}
+@keyframes loop2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 200%;
+  }
+}
+
+*,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #272a32;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+}
+small {
+  font-size: 0.3em;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+header {
+  -webkit-box-shadow: inset 0 0 20px #999;
+  -moz-box-shadow: inset 0 0 20px #999;
+  box-shadow: inset 0 0 20px #999;
+  -webkit-animation: loop infinite 18s linear;
+  animation: loop infinite 18s linear;
+  background: #111 url(./sativa.png) 0 0 fixed;
+  height: 100px;
+  width: 100%;
+  line-height: 1;
+  position: relative;
+}
+footer {
+  color: #fff;
+  line-height: 30px;
+  font-size: 1rem;
+  padding: 0 0.2em;
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+header .credits {
+  font-size: 36%;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  line-height: 1;
+  color: #c66;
+  text-decoration: none;
+  white-space: nowrap;
+}
+header span {
+  position: relative;
+}
+.section {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-animation: loop2 infinite 28s linear;
+  animation: loop2 infinite 28s linear;
+}
+.section#games {
+  background: url("s_1.jpg") 0 0 repeat;
+  font-size: 150%;
+}
+#games:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.section .h3 {
+  font-size: 3rem;
+  line-height: 0;
+  text-align: center;
+  font-weight: 600;
+  color: #272a32;
+  position: relative;
+  z-index: 1;
+}
+
+#logo {
+  line-height: 106px;
+  color: #ccc;
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  height: 100%;
+}
+#recoon {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+.content {
+  color: #fff;
+  padding: 2rem 1rem;
+  padding-top: 100px;
+  font-size: 1.4rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+  line-height: 1.5;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.content a {
+  border-bottom: 1px solid #fff;
+}
+.error,
+.success {
+  border-left-width: 4px !important;
+  border-left-color: #f66 !important;
+  background-color: #faa !important;
+}
+.success {
+  border-left-color: #6f6 !important;
+  background-color: #afa !important;
+}
+
+.clear:after,
+.clear:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.t-right {
+  text-align: right;
+}
+.t-left {
+  text-align: left;
+}
+.t-center {
+  text-align: center;
+}
+
+.venter {
+  position: relative;
+}
+
+.venterc {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header .credits {
+    font-size: 0.8rem;
+    bottom: 12px;
+    right: auto;
+    left: 100%;
+  }
+
+  .half {
+    width: 50%;
+    float: left;
+  }
+
+  .section .h3 {
+    font-size: 5rem;
+  }
+
+  #logo {
+    line-height: 106px;
+    color: #ccc;
+    margin: 0;
+    font-size: 4em;
+    text-align: center;
+    height: 100%;
+  }
+  #recoon {
+    height: 80px;
+    width: 80px;
+    vertical-align: middle;
+  }
+}
