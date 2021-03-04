@@ -1,3 +1,8 @@
+html,
+body {
+  background: white url("../images/bg.jpg") repeat;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
